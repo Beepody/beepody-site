@@ -1,0 +1,15 @@
+[
+	{
+		"url": "/",
+		"title": "Beepody",
+		"photo": "/assets/Beepody.webp"
+	},
+	{
+		"url": "/about",
+		"title": "About Beepody"
+	},
+	{
+		"url": "/404",
+		"title": "Page Not Found"
+	}
+]
