@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{FDtd:function(e,t,c){"use strict";c.r(t);var s=c("hosL"),o=c("Hrl7");t.default=()=>Object(s.h)("section",{class:"container"},Object(s.h)(o.a,{title:"Beepody"}),Object(s.h)("div",{class:"px-4 pt-5 my-5 text-center border-bottom"},Object(s.h)("h1",{class:"h4 fw-bold"},"Beepody"),Object(s.h)("div",{class:"col-lg-6 mx-auto"},Object(s.h)("p",{class:"lead mb-4"},"Beep."),Object(s.h)("p",{class:"mb-4"},"Bloop."))))}}]);
-//# sourceMappingURL=route-home.chunk.5fd61.esm.js.map
