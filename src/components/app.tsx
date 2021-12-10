@@ -1,13 +1,16 @@
 import { FunctionalComponent, h } from 'preact'
-import { Router } from 'preact-router'
+import { Route, Router } from 'preact-router'
 import Helmet from 'react-helmet'
 
 import Home from '../routes/home'
 import About from '../routes/about'
+import Beeps from '../routes/beeps'
+import Beep from '../routes/beep'
 
 import NotFound from '../routes/not-found'
 import Header from './header'
 import Footer from './footer'
+import { RandomBeep } from '../routes/beeps/meta'
 
 const App: FunctionalComponent = () => {
   return (
@@ -28,6 +31,9 @@ const App: FunctionalComponent = () => {
         <Router>
           <Home path="/" />
           <About path="/about" />
+          <Beeps path="/beeps/" />
+          <RandomBeep path="/random/" />
+          <Route path="/beeps/:path/" component={Beep} />
           <NotFound path="/404" />
           <NotFound default />
         </Router>
