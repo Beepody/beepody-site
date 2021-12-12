@@ -3,6 +3,7 @@ import Helmet from 'react-helmet'
 import NotFound from '../not-found'
 import library from '../beeps/library'
 import { BeepPlaque } from '../beeps/meta'
+import { playBeepSequence } from 'beepody/dist/tsc/main'
 
 interface Props {
   path: keyof typeof library;
@@ -14,20 +15,21 @@ const BeepProfile: FunctionalComponent<Props> = (props: Props) => {
   if (!(path in library)) {
     return <NotFound default />
   }
-  console.log('beep:', library[path])
   const beep = library[path]
 
   const ref = createRef<HTMLElement>()
 
   const doBeep = (): void => {
-    console.log('beep!')
+    playBeepSequence(beep.sequence)
   }
 
   return (
-    <section ref={ref}>
+    <section class="container py-5" ref={ref}>
       <Helmet><title>{beep.title}</title></Helmet>
+      <div class="p-4 text-center">
+        <button onClick={doBeep}>{beep.path}()</button>
+      </div>
       <BeepPlaque path={beep.path} />
-      <button onClick={doBeep}>beep()</button>
     </section>
   )
 }

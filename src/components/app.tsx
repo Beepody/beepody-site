@@ -31,9 +31,9 @@ const App: FunctionalComponent = () => {
         <Router>
           <Home path="/" />
           <About path="/about" />
-          <Beeps path="/beeps/" />
-          <RandomBeep path="/random/" />
-          <Route path="/beeps/:path/" component={Beep} />
+          <Beeps path="/beeps" />
+          <RandomBeep path="/random" />
+          <Route path="/:path" component={Beep} />
           <NotFound path="/404" />
           <NotFound default />
         </Router>

@@ -9,7 +9,7 @@ const Header: FunctionalComponent = () => {
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-          <a class="navbar-brand" href="https://beepody.com/">
+          <a class="navbar-brand" href="/">
             Beepody
           </a>
           <span class="navbar-text text-white">
@@ -21,10 +21,16 @@ const Header: FunctionalComponent = () => {
           <div class={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse`} id="nav-menu">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item" data-bs-toggle="collapse" data-bs-target="#nav-menu">
-                <Link class="nav-link text-white" href="/beeps/" activeClassName="active" onClick={handleNavCollapse}>
+                <Link class="nav-link text-white" href="/beeps" activeClassName="active" onClick={handleNavCollapse}>
                   Beeps
                 </Link>
-              </li>              <li class="nav-item" data-bs-toggle="collapse" data-bs-target="#nav-menu">
+              </li>
+              <li class="nav-item" data-bs-toggle="collapse" data-bs-target="#nav-menu">
+                <Link class="nav-link text-white" href="/random" activeClassName="active" onClick={handleNavCollapse}>
+                  Random
+                </Link>
+              </li>
+              <li class="nav-item" data-bs-toggle="collapse" data-bs-target="#nav-menu">
                 <Link class="nav-link text-white" href="/about" activeClassName="active" onClick={handleNavCollapse}>
                   About
                 </Link>

@@ -8,7 +8,7 @@ const About: FunctionalComponent = () => {
       <h1>About Beepody</h1>
       <p>Beepody is an online community founded in 2021 which is dedicated to beeping.</p>
       <h2>Mission Statement</h2>
-      <p>Beep.</p>
+      <p>To beep. There is no question.</p>
     </section>
   )
 }

@@ -9,6 +9,18 @@
 		"title": "About Beepody"
 	},
 	{
+		"url": "/beeps",
+		"title": "Beeps"
+	},
+	{
+		"url": "/contant",
+		"title": "Constant Beep"
+	},
+	{
+		"url": "/coin",
+		"title": "Mario Coin"
+	},
+	{
 		"url": "/404",
 		"title": "Page Not Found"
 	}

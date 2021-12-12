@@ -1,26 +1,37 @@
-// import {BeepSequence} from 'beepody'
+import {Beep, BeepSequence} from 'beepody/dist/tsc/main'
 
-export type Beep = {
+export type BeepMelody = {
   path: string;
   title: string;
   description: string;
-//  sequence: BeepSequence;
+  sequence: BeepSequence;
   displayUrl?: string;
   thumbnailUrl?: string;
   thumbnailLegacyUrl?: string;
 }
 
 type BeepLibrary = {
-  [key:string]: Beep;
+  [key:string]: BeepMelody;
 }
 
 const library: BeepLibrary = {
-  // constant: {
-  //   path: 'beep',
-  //   title: 'Default Beep',
-  //   description: 'One beep fits all.',
-  //   sequence: new BeepSequence([])
-  // },
+  constant: {
+    path: 'constant',
+    title: 'Default Beep',
+    description: 'One beep fits all.',
+    sequence: new BeepSequence([
+      new Beep()
+    ])
+  },
+  coin: {
+    path: 'coin',
+    title: 'Mario coin',
+    description: 'Cha-ching!',
+    sequence: new BeepSequence([
+      new Beep(988, 100),
+      new Beep(1319, 800)
+    ])
+  },
 }
 
 export default library
