@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{W1t3:function(e,t,c){"use strict";c.r(t);var n=c("hosL"),o=c("Hrl7"),a=c("z36D"),b=c("wvb4"),l=c("R3EQ");t.default=e=>{const{path:t}=e;if(!(t in b.a))return Object(n.h)(a.a,{default:!0});console.log("beep:",b.a[t]);const c=b.a[t],h=Object(n.createRef)();return Object(n.h)("section",{ref:h},Object(n.h)(o.a,null,Object(n.h)("title",null,c.title)),Object(n.h)(l.a,{path:c.path}),Object(n.h)("button",{onClick:()=>{console.log("beep!")}},"beep()"))}}}]);
-//# sourceMappingURL=route-beep.chunk.e3ac1.esm.js.map
