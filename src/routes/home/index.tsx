@@ -1,8 +1,6 @@
 import { FunctionalComponent, h } from 'preact'
 import Helmet from 'react-helmet'
-// import beepody, {playDefaultBeep} from 'beepody/src/beepody'
-import beepody, {playDefaultBeep} from '../../../../beepody/src/beepody'
-console.log(beepody, playDefaultBeep)
+import {playDefaultBeep} from 'beepody/dist/tsc/main'
 
 const Home: FunctionalComponent = () => {
   return (

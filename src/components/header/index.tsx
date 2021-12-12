@@ -21,11 +21,10 @@ const Header: FunctionalComponent = () => {
           <div class={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse`} id="nav-menu">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item" data-bs-toggle="collapse" data-bs-target="#nav-menu">
-                <Link class="nav-link text-white" href="/" activeClassName="active" onClick={handleNavCollapse}>
-                  Home
+                <Link class="nav-link text-white" href="/beeps/" activeClassName="active" onClick={handleNavCollapse}>
+                  Beeps
                 </Link>
-              </li>
-              <li class="nav-item" data-bs-toggle="collapse" data-bs-target="#nav-menu">
+              </li>              <li class="nav-item" data-bs-toggle="collapse" data-bs-target="#nav-menu">
                 <Link class="nav-link text-white" href="/about" activeClassName="active" onClick={handleNavCollapse}>
                   About
                 </Link>

@@ -1,10 +1,10 @@
-import { BeepSequence } from "beepody/dist/tsc/Beep"
+// import {BeepSequence} from 'beepody'
 
 export type Beep = {
   path: string;
   title: string;
   description: string;
-  sequence: BeepSequence;
+//  sequence: BeepSequence;
   displayUrl?: string;
   thumbnailUrl?: string;
   thumbnailLegacyUrl?: string;
@@ -15,12 +15,12 @@ type BeepLibrary = {
 }
 
 const library: BeepLibrary = {
-  constant: {
-    path: 'beep',
-    title: 'Default Beep',
-    description: 'One beep fits all.',
-    sequence: new BeepSequence([])
-  },
+  // constant: {
+  //   path: 'beep',
+  //   title: 'Default Beep',
+  //   description: 'One beep fits all.',
+  //   sequence: new BeepSequence([])
+  // },
 }
 
 export default library

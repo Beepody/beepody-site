@@ -23,8 +23,6 @@ const BeepProfile: FunctionalComponent<Props> = (props: Props) => {
     console.log('beep!')
   }
 
-  // const polyrat = new Polyrat(beep.coefficients)
-
   return (
     <section ref={ref}>
       <Helmet><title>{beep.title}</title></Helmet>

@@ -4,6 +4,7 @@
   "homepage": "https://beepody.com/",
   "version": "0.0.1",
   "license": "GPL-3.0",
+  "type": "commonjs",
   "scripts": {
     "dev": "preact watch",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx,mjs}' 'tests/**/*.{js,jsx,ts,tsx,mjs}'",
