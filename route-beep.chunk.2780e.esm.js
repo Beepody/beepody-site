@@ -1,2 +1,2 @@
 (window.webpackJsonp=window.webpackJsonp||[]).push([[3],{W1t3:function(e,t,c){"use strict";c.r(t);var n=c("hosL"),a=c("Hrl7"),s=c("z36D"),b=c("wvb4"),h=c("R3EQ"),l=c("HIGM");t.default=e=>{const{path:t}=e;if(!(t in b.a))return Object(n.h)(s.a,{default:!0});const c=b.a[t],p=Object(n.createRef)();return Object(n.h)("section",{class:"container py-5",ref:p},Object(n.h)(a.a,null,Object(n.h)("title",null,c.title)),Object(n.h)("div",{class:"p-4 text-center"},Object(n.h)("button",{onClick:()=>{Object(l.playBeepSequence)(c.sequence)}},c.path,"()")),Object(n.h)(h.a,{path:c.path}))}}}]);
-//# sourceMappingURL=route-beep.chunk.72fc1.esm.js.map
+//# sourceMappingURL=route-beep.chunk.2780e.esm.js.map
