@@ -19,7 +19,7 @@ const BeepProfile: FunctionalComponent<Props> = (props: Props) => {
 
   const ref = createRef<HTMLElement>()
 
-  const doBeep = (): void => {
+  const playBeep = (): void => {
     playBeepSequence(beep.sequence)
   }
 
@@ -27,7 +27,7 @@ const BeepProfile: FunctionalComponent<Props> = (props: Props) => {
     <section class="container py-5" ref={ref}>
       <Helmet><title>{beep.title}</title></Helmet>
       <div class="p-4 text-center">
-        <button onClick={doBeep}>{beep.path}()</button>
+        <button onClick={playBeep}>{beep.path}()</button>
       </div>
       <BeepPlaque path={beep.path} />
     </section>

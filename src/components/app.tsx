@@ -30,11 +30,11 @@ const App: FunctionalComponent = () => {
       <main>
         <Router>
           <Home path="/" />
-          <About path="/about" />
-          <Beeps path="/beeps" />
-          <RandomBeep path="/random" />
-          <Route path="/:path" component={Beep} />
-          <NotFound path="/404" />
+          <About path="/about/" />
+          <Beeps path="/beeps/" />
+          <RandomBeep path="/random/" />
+          <Route path="/:path/" component={Beep} />
+          <NotFound path="/404/" />
           <NotFound default />
         </Router>
       </main>

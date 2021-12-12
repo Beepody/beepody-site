@@ -5,23 +5,23 @@
 		"photo": "/assets/Beepody.webp"
 	},
 	{
-		"url": "/about",
+		"url": "/about/",
 		"title": "About Beepody"
 	},
 	{
-		"url": "/beeps",
+		"url": "/beeps/",
 		"title": "Beeps"
 	},
 	{
-		"url": "/contant",
+		"url": "/contant/",
 		"title": "Constant Beep"
 	},
 	{
-		"url": "/coin",
+		"url": "/coin/",
 		"title": "Mario Coin"
 	},
 	{
-		"url": "/404",
+		"url": "/404/",
 		"title": "Page Not Found"
 	}
 ]
