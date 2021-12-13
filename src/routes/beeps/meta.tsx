@@ -1,3 +1,4 @@
+import { playBeepSequence } from "beepody"
 import { createRef, FunctionalComponent, h } from "preact"
 import { Link } from "preact-router"
 import Helmet from "react-helmet"
@@ -13,6 +14,9 @@ export const BeepPlaque: FunctionalComponent<BeepPlaqueProps> = (props: BeepPlaq
   beep.displayUrl = `/${beep.path}`
   beep.thumbnailUrl = `/assets/thumbnails/${beep.path}.webp`
   beep.thumbnailLegacyUrl = `/assets/thumbnails/${beep.path}.png`
+  const playBeep = (): void => {
+    playBeepSequence(beep.sequence)
+  }
   const ref = createRef()
   return <div class="card beep_plaque" ref={ref}>
     <a href={beep.displayUrl} aria-label="Profile">
@@ -26,6 +30,9 @@ export const BeepPlaque: FunctionalComponent<BeepPlaqueProps> = (props: BeepPlaq
       <h5 class="card-title">
         <strong><em>{beep.title}</em></strong>
       </h5>
+      <div class="p-4 text-center">
+        <button onClick={playBeep}>{beep.path}()</button>
+      </div>
       { beep.description ? <p class="card-text">{beep.description}</p> : '' }
       <p class="card-text">{beep.toString()}</p>
     </div>
