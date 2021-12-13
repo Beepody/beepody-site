@@ -13,12 +13,32 @@
 		"title": "Beeps"
 	},
 	{
+		"url": "/random/",
+		"title": "Random Beep"
+	},
+	{
 		"url": "/constant/",
 		"title": "Constant Beep"
 	},
 	{
 		"url": "/coin/",
 		"title": "Mario Coin"
+	},
+	{
+		"url": "/power-up/",
+		"title": "Mario Power-up"
+	},
+	{
+		"url": "/feel-good/",
+		"title": "Gorillaz - Feel Good Inc."
+	},
+	{
+		"url": "/death-march/",
+		"title": "Star Wars - Imperial Death March"
+	},
+	{
+		"url": "/chain/",
+		"title": "Fleetwood Mac: The Chain - Bass Riff"
 	},
 	{
 		"url": "/404/",

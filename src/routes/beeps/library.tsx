@@ -35,7 +35,7 @@ const library: BeepLibrary = {
   },
   'power-up': {
     path: 'power-up',
-    title: 'Mario power-up',
+    title: 'Mario Power-up',
     description: 'Eat shrooms, grow up.',
     sequence: new BeepSequence([
       // 1750 523 1 392 1 523 1 659 1 784 1 1047 1 784 1 415 1 523 1 622 1 831 1 622 1 831 1 1046 1 1244 1 1661 1 1244 1 466 1 587 1 698 1 932 1 1175 1 1397 1 1865 1 1397 1

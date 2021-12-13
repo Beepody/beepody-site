@@ -48,7 +48,7 @@ export const getRandomBeep = (): BeepMelody => {
 export const RandomBeep: FunctionalComponent = () => {
   const beep = getRandomBeep()
   if (typeof window !== 'undefined') {
-    window.location.href = `/${beep.path}`
+    window.location.href = `/${beep.path}/`
   }
   return (
     <section class="container py-5">
@@ -56,7 +56,7 @@ export const RandomBeep: FunctionalComponent = () => {
         <title>Random Beep</title>
       </Helmet>
       <p>Redirecting to the "{beep.title}" beep...</p>
-      <Link class="btn btn-outline-primary btn-lg px-4 me-sm-3" href={`/${beep.path}`}>{beep.title}</Link>
+      <Link class="btn btn-outline-primary btn-lg px-4 me-sm-3" href={`/${beep.path}/`}>{beep.title}</Link>
     </section>
   )
 }
