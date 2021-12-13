@@ -13,7 +13,7 @@
     "build": "preact build --no-prerender",
     "postbuild": "node ./src/generate-sitemap.mjs",
     "serve": "sirv build --port 8080 --cors --single",
-    "predeploy": "yarn clean && yarn lint && yarn test --watchAll=false --coverage && yarn build",
+    "predeploy": "yarn clean && yarn lint && yarn test --watchAll=false --coverage && yarn build && cp CNAME ./build/",
     "deploy": "gh-pages -d build"
   },
   "browserslist": [
