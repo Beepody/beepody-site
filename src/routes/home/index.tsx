@@ -14,7 +14,7 @@ const Home: FunctionalComponent = () => {
         </div>
         <h3>New</h3>
         <p>Try our new interactive beep:</p>
-        <button onClick={playDefaultBeep}>beep()</button>
+        <button onClick={playDefaultBeep} class="btn btn-primary">beep</button>
       </div>
     </section>
   )

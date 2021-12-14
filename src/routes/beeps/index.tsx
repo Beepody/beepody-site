@@ -18,9 +18,6 @@ const BeepIndex: FunctionalComponent = () => {
       return (
         <div key={i} class="col-sm-6 col-md-4 mb-4">
           <BeepPlaque path={beep.path} />
-          <div class="p-2 text-center">
-            <button onClick={playBeep}>{beep.path}()</button>
-          </div>
         </div>
       )
     })}

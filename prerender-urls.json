@@ -9,6 +9,10 @@
 		"title": "About Beepody"
 	},
 	{
+		"url": "/beep/",
+		"title": "Custom Beep Editor"
+	},
+	{
 		"url": "/beeps/",
 		"title": "Beeps"
 	},
@@ -18,27 +22,33 @@
 	},
 	{
 		"url": "/constant/",
-		"title": "Constant Beep"
+		"title": "Constant Beep",
+		"photo": "/assets/thumbnails/constant.webp"
 	},
 	{
 		"url": "/coin/",
-		"title": "Mario Coin"
+		"title": "Mario Coin",
+		"photo": "/assets/thumbnails/coin.webp"
 	},
 	{
 		"url": "/power-up/",
-		"title": "Mario Power-up"
+		"title": "Mario Power-up",
+		"photo": "/assets/thumbnails/power-up.webp"
 	},
 	{
 		"url": "/feel-good/",
-		"title": "Gorillaz - Feel Good Inc."
+		"title": "Gorillaz - Feel Good Inc.",
+		"photo": "/assets/thumbnails/feel-good.webp"
 	},
 	{
 		"url": "/death-march/",
-		"title": "Star Wars - Imperial Death March"
+		"title": "Star Wars - Imperial Death March",
+		"photo": "/assets/thumbnails/death-march.webp"
 	},
 	{
 		"url": "/chain/",
-		"title": "Fleetwood Mac: The Chain - Bass Riff"
+		"title": "Fleetwood Mac: The Chain - Bass Riff",
+		"photo": "/assets/thumbnails/chain.webp"
 	},
 	{
 		"url": "/404/",

@@ -5,6 +5,7 @@ import Helmet from 'react-helmet'
 import Home from '../routes/home'
 import About from '../routes/about'
 import Beeps from '../routes/beeps'
+import Editor from '../routes/editor'
 import Beep from '../routes/beep'
 
 import NotFound from '../routes/not-found'
@@ -32,6 +33,7 @@ const App: FunctionalComponent = () => {
           <Home path="/" />
           <About path="/about/" />
           <Beeps path="/beeps/" />
+          <Editor path="/beep/" />
           <RandomBeep path="/random/" />
           <Route path="/:path/" component={Beep} />
           <NotFound path="/404/" />

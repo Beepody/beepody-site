@@ -1,8 +1,8 @@
-import { playBeepSequence } from "beepody"
 import { createRef, FunctionalComponent, h } from "preact"
 import { Link } from "preact-router"
 import Helmet from "react-helmet"
 import library, { BeepMelody } from "./library"
+import { playBeepSequence } from 'beepody/dist/tsc/main'
 
 interface BeepPlaqueProps {
   path: keyof typeof library;
@@ -31,7 +31,10 @@ export const BeepPlaque: FunctionalComponent<BeepPlaqueProps> = (props: BeepPlaq
         <strong><em>{beep.title}</em></strong>
       </h5>
       <div class="p-4 text-center">
-        <button onClick={playBeep}>{beep.path}()</button>
+        <div class="btn-group">
+          <button onClick={playBeep} class="btn btn-primary">play</button>
+          <Link href={`/beep/#${beep.path}`} class="btn btn-secondary">edit</Link>
+        </div>
       </div>
       { beep.description ? <p class="card-text">{beep.description}</p> : '' }
       <p class="card-text">{beep.toString()}</p>
