@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{W1t3:function(t,e,c){"use strict";c.r(e);var a=c("hosL"),n=c("Hrl7"),l=c("z36D"),o=c("wvb4"),r=c("R3EQ");e.default=t=>{const{path:e}=t;if(!(e in o.a))return Object(a.h)(l.a,{default:!0});const c=o.a[e],s=Object(a.createRef)();return Object(a.h)("section",{class:"container py-5 col-md-6 col-lg-3",ref:s},Object(a.h)(n.a,null,Object(a.h)("title",null,c.title)),Object(a.h)(r.a,{path:c.path}))}}}]);
+//# sourceMappingURL=route-beep.chunk.983e5.esm.js.map
