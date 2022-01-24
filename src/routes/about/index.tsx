@@ -6,7 +6,7 @@ const About: FunctionalComponent = () => {
     <section class="container py-5">
       <Helmet title="About Beepody" />
       <h1>About Beepody</h1>
-      <p>Beepody is an online community dedicated to beeping which was founded in 2021.</p>
+      <p>Beepody is a non-profit organization dedicated to beeping founded in 2021.</p>
       <h2>Mission Statement</h2>
       <p>To beep. There is no question.</p>
       <h2>Beep Formats</h2>

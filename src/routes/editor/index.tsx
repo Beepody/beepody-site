@@ -8,19 +8,19 @@ const BeepEditor: FunctionalComponent = () => {
     <section class="container py-5" ref={ref}>
       <Helmet><title>Beep Editor</title></Helmet>
       <h1>Beep Editor</h1>
-      <h2>URL</h2>
+      <h2>GRUB Init Tune</h2>
       <textarea class="alert alert-dark w-100" />
-      <h2>GRUB</h2>
+      <h2>Beep Command</h2>
       <textarea class="alert alert-dark w-100" />
-      <h2>beep</h2>
-      <textarea class="alert alert-dark w-100" />
+      <h2>Status</h2>
+      <p>Nice beep</p>
       <h2>Metrics</h2>
       <ul>
         <li>
           Beeps: 69
         </li>
         <li>
-          Length: 10 seconds
+          Length: 420 seconds
         </li>
       </ul>
     </section>

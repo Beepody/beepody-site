@@ -19,7 +19,7 @@ const BeepProfile: FunctionalComponent<Props> = (props: Props) => {
   const ref = createRef<HTMLElement>()
 
   return (
-    <section class="container py-5" ref={ref}>
+    <section class="container py-5 col-md-6 col-lg-3" ref={ref}>
       <Helmet><title>{beep.title}</title></Helmet>
       <BeepPlaque path={beep.path} />
     </section>
