@@ -38,15 +38,13 @@ const BeepEditor: FunctionalComponent = () => {
   const ref = createRef<HTMLElement>()
   const initialHashState = {0: ''}
   const {state, setStateAtKey} = useHashState(initialHashState)
-  const [sequence, setSequence] = useState(new BeepSequence([]))
-  const [status, setStatus] = useState('Loading...')
-  const [GRUBCode, setGRUBCode] = useState('play 600 ')
-  const [beepCode, setBeepCode] = useState('beep ')
+  const initialSequence = state[0].length ? parseBeepHash(state[0]) : new BeepSequence([])
+  const [sequence, setSequence] = useState(initialSequence)
+  const [status, setStatus] = useState('Ready to beep')
+  const [GRUBCode, setGRUBCode] = useState(initialSequence.toGRUBInitTune())
+  const [beepCode, setBeepCode] = useState(initialSequence.toBeepCommand())
   const handlePlayClick = (): void => {
     playBeepSequence(sequence)
-  }
-  const parseBeepHash = (hash: string): BeepSequence => {
-    return parseGRUBInitTune(hash)
   }
   const handleGRUBCodeUpdate = (sequence: BeepSequence): void => {
     setSequence(sequence)
@@ -57,12 +55,6 @@ const BeepEditor: FunctionalComponent = () => {
     setSequence(sequence)
     setStateAtKey(0, sequence.toHash())
     setGRUBCode(sequence.toGRUBInitTune())
-  }
-  if (state[0].length) {
-    console.log(parseBeepHash(state[0]))
-    // setSequence(parseBeepHash(state[0]))
-    // setBeepCode(sequence.toBeepCommand())
-    // setGRUBCode(sequence.toGRUBInitTune())
   }
 
   return (

@@ -2566,9 +2566,9 @@ bcrypt-pbkdf@^1.0.0:
     tweetnacl "^0.14.3"
 
 beepody@*:
-  version "0.1.7"
-  resolved "https://registry.yarnpkg.com/beepody/-/beepody-0.1.7.tgz#aaf151f6bf5921cbbf99fc5eb38b10a1c21a12ae"
-  integrity sha512-AJa9bO+XPjoidPF7eExssAwm9YhGUhLZ9DnIjpMzh0TBJXTlVPvkqie3yE1HPceK1lxQmGOtNxVFi4LMwmuoww==
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/beepody/-/beepody-0.1.8.tgz#857ba0e4b59e352a932a82a05fc6a2a72f3c65fe"
+  integrity sha512-j6Um1tZzNAchXP7Vos20+hImCfd7ONjF0GcZGq0KSWjINIuSeYwC44YkLEx5pKzej/Eto7aiCDW/d7Ztk7Mhtg==
   dependencies:
     tslib "*"
 
