@@ -6,11 +6,13 @@ import Helmet from 'react-helmet'
 
 type ParseSequenceFunction = (sequence: string) => BeepSequence
 type SetSequenceFunction = (sequence: BeepSequence) => void
+type SetStatusFunction = (status: string) => void
 
 interface CodeEditorProps {
   code: string;
   parseSequence: ParseSequenceFunction;
   setSequence: SetSequenceFunction;
+  setStatus: SetStatusFunction;
 }
 
 const CodeEditor: FunctionalComponent<CodeEditorProps> = (props: CodeEditorProps) => {
