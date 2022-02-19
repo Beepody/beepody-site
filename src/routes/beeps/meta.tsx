@@ -37,10 +37,10 @@ export const BeepPlaque: FunctionalComponent<BeepPlaqueProps> = (props: BeepPlaq
         </div>
       </div>
       { beep.description ? <p class="card-text">{beep.description}</p> : '' }
-      <p class="card-text">Beep Command:</p>
-      <pre><code>{beep.sequence.toBeepCommand()}</code></pre>
       <p class="card-text">GRUB Init Tune:</p>
-      <pre><code>{beep.sequence.toGRUBInitTune()}</code></pre>
+      <pre class="p-2"><code>{beep.sequence.toGRUBInitTune()}</code></pre>
+      <p class="card-text">Beep Command:</p>
+      <pre class="p-2"><code>{beep.sequence.toBeepCommand()}</code></pre>
     </div>
   </div>
 }
