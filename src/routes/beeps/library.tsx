@@ -67,6 +67,37 @@ const library: BeepLibrary = {
       new Beep(1397, 34)
     ])
   },
+  mario: {
+    path: 'mario',
+    title: 'Mario intro',
+    description: 'It\'s me, Mario!',
+    sequence: new BeepSequence([
+      // 410 668 1 668 1 0 1 668 1 0 1 522 1 668 1 0 1 784 2 0 2 392 2
+      new Beep(668, 100, 2),
+      new Beep(0, 100),
+      new Beep(668, 100),
+      new Beep(0, 100),
+      new Beep(522, 100),
+      new Beep(668, 100),
+      new Beep(0, 100),
+      new Beep(784, 200),
+      new Beep(0, 200),
+      new Beep(392, 200)
+    ])
+  },
+  encounters: {
+    path: 'encounters',
+    title: 'Close Encounters of the Third Kind',
+    description: '3',
+    sequence: new BeepSequence([
+      // 400 880 2 988 2 783 2 392 2 587 3
+      new Beep(880, 200),
+      new Beep(988, 200),
+      new Beep(783, 200),
+      new Beep(392, 200),
+      new Beep(587, 200)
+    ])
+  },
   'feel-good': {
     path: 'feel-good',
     title: 'Gorillaz - Feel Good Inc.',
