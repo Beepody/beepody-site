@@ -33,7 +33,7 @@ export const BeepPlaque: FunctionalComponent<BeepPlaqueProps> = (props: BeepPlaq
       <div class="p-4 text-center">
         <div class="btn-group">
           <button onClick={playBeep} class="btn btn-primary">play</button>
-          <Link href={`/beep/#${beep.sequence.toHash()}`} class="btn btn-secondary">edit</Link>
+          <Link href={`/beep/#${ JSON.stringify({0: beep.sequence.toHash()}) }`} class="btn btn-secondary">edit</Link>
         </div>
       </div>
       { beep.description ? <p class="card-text">{beep.description}</p> : '' }

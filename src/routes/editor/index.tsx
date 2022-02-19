@@ -1,9 +1,10 @@
-import { parseBeepCommand, parseGRUBInitTune, playBeepSequence } from 'beepody/dist/tsc/beepody'
+import { parseBeepCommand, parseGRUBInitTune, parseBeepHash, playBeepSequence } from 'beepody/dist/tsc/beepody'
 import { BeepSequence } from 'beepody/dist/tsc/main'
 import { createRef, FunctionalComponent, h } from 'preact'
 import { Link } from 'preact-router'
 import { useState } from 'preact/hooks'
 import Helmet from 'react-helmet'
+import useHashState from 'use-hash-state'
 
 type ParseSequenceFunction = (sequence: string) => BeepSequence
 type SetSequenceFunction = (sequence: BeepSequence) => void
@@ -35,6 +36,8 @@ const CodeEditor: FunctionalComponent<CodeEditorProps> = (props: CodeEditorProps
 
 const BeepEditor: FunctionalComponent = () => {
   const ref = createRef<HTMLElement>()
+  const initialHashState = {0: ''}
+  const {state, setStateAtKey} = useHashState(initialHashState)
   const [sequence, setSequence] = useState(new BeepSequence([]))
   const [status, setStatus] = useState('Loading...')
   const [GRUBCode, setGRUBCode] = useState('play 600 ')
@@ -42,13 +45,24 @@ const BeepEditor: FunctionalComponent = () => {
   const handlePlayClick = (): void => {
     playBeepSequence(sequence)
   }
+  const parseBeepHash = (hash: string): BeepSequence => {
+    return parseGRUBInitTune(hash)
+  }
   const handleGRUBCodeUpdate = (sequence: BeepSequence): void => {
     setSequence(sequence)
+    setStateAtKey(0, sequence.toHash())
     setBeepCode(sequence.toBeepCommand())
   }
   const handleBeepCodeUpdate = (sequence: BeepSequence): void => {
     setSequence(sequence)
+    setStateAtKey(0, sequence.toHash())
     setGRUBCode(sequence.toGRUBInitTune())
+  }
+  if (state[0].length) {
+    console.log(parseBeepHash(state[0]))
+    // setSequence(parseBeepHash(state[0]))
+    // setBeepCode(sequence.toBeepCommand())
+    // setGRUBCode(sequence.toGRUBInitTune())
   }
 
   return (
