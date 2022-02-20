@@ -51,6 +51,16 @@
 		"photo": "/assets/thumbnails/chain.webp"
 	},
 	{
+		"url": "/mario/",
+		"title": "Mario intro",
+		"photo": "/assets/thumbnails/mario.webp"
+	},
+	{
+		"url": "/encounters/",
+		"title": "Close Encounters of the Third Kind",
+		"photo": "/assets/thumbnails/encounters.webp"
+	},
+	{
 		"url": "/404/",
 		"title": "Page Not Found"
 	}
