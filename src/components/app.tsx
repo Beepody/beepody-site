@@ -26,7 +26,26 @@ const App: FunctionalComponent = () => {
         link={[
           {rel: "canonical", href: "https://beepody.com/"},
         ]}
-      />
+      >
+        <script type="application/ld+json">{`
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "Beepody",
+            "legalName" : "Beepody Corporation",
+            "url": "https://beepody.com",
+            "logo": "https://beepody.com/assets/Beepody.png",
+            "foundingDate": "2021",
+            "founders": [
+              {
+              "@type": "Person",
+              "name": "Dylan Ferris"
+              }
+            ],
+            "email": "dylan@beepody.com"
+        }
+    `}</script>
+      </Helmet>
       <Header />
       <main>
         <Router>

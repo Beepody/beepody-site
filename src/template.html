@@ -7,9 +7,13 @@
 		<meta name="mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<link rel="apple-touch-icon" href="/assets/icons/apple-touch-icon.png">
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.1.3/dist/sketchy/bootstrap.min.css" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@latest/dist/sketchy/bootstrap.min.css" crossorigin="anonymous">
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<% preact.headEnd %>
+		<% if (process.env.NODE_ENV === 'production') { %>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-VLN98NDFY1"></script>
+		<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js', new Date());gtag('config', 'G-VLN98NDFY1')</script>
+		<% } %>
 	</head>
 	<body>
 		<% preact.bodyEnd %>

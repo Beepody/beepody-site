@@ -2,15 +2,14 @@
   "private": true,
   "name": "beepody-site",
   "homepage": "https://beepody.com/",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "GPL-3.0",
-  "type": "commonjs",
   "scripts": {
     "dev": "preact watch",
     "lint": "eslint 'src/**/*.{js,jsx,ts,tsx,mjs}' 'tests/**/*.{js,jsx,ts,tsx,mjs}'",
     "test": "jest ./tests",
     "clean": "rm -rf build coverage",
-    "build": "preact build --no-prerender",
+    "build": "preact build --json --prerenderUrls ./prerender-urls.js",
     "postbuild": "node ./src/generate-sitemap.mjs",
     "serve": "sirv build --port 8080 --cors --single",
     "predeploy": "yarn clean && yarn lint && yarn test --watchAll=false --coverage && yarn build && cp CNAME ./build/",
@@ -52,15 +51,7 @@
     ]
   },
   "dependencies": {
-    "beepody": "*",
-    "core-js": "*",
-    "postcss": "<8",
-    "preact": "*",
-    "preact-html-converter": "*",
-    "preact-render-to-string": "*",
-    "preact-router": "*",
-    "regenerator-runtime": "*",
-    "use-hash-state": "*"
+    "beepody": "*"
   },
   "devDependencies": {
     "@babel/core": "*",
@@ -71,22 +62,30 @@
     "@types/react-helmet": "*",
     "@typescript-eslint/eslint-plugin": "*",
     "@typescript-eslint/parser": "*",
+    "core-js": "*",
     "critters": "*",
     "enzyme": "*",
     "enzyme-adapter-preact-pure": "*",
-    "eslint": "<8",
+    "eslint": "*",
     "eslint-config-preact": "*",
     "gh-pages": "*",
     "globby": "*",
     "jest": "*",
     "jest-preset-preact": "*",
     "parse5": "*",
+    "postcss": "*",
+    "preact": "*",
     "preact-cli": "*",
+    "preact-html-converter": "*",
+    "preact-render-to-string": "*",
+    "preact-router": "*",
     "prettier": "*",
     "react-helmet": "*",
+    "regenerator-runtime": "*",
     "sirv-cli": "*",
     "tone": "*",
-    "typescript": "*"
+    "typescript": "*",
+    "use-hash-state": "*"
   },
   "peerDependencies": {
     "parse5": "*"
