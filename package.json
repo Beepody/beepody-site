@@ -2,7 +2,7 @@
   "private": true,
   "name": "beepody-site",
   "homepage": "https://beepody.com/",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "GPL-3.0",
   "scripts": {
     "dev": "preact watch",
@@ -71,6 +71,7 @@
     "gh-pages": "*",
     "globby": "*",
     "jest": "*",
+    "jest-environment-jsdom": "*",
     "jest-preset-preact": "*",
     "parse5": "*",
     "postcss": "*",
