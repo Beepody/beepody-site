@@ -16,7 +16,6 @@ async function generate() {
     '/editor/',
     '/random/',
     '/constant/',
-    '/beep/',
     '/coin/',
     '/power-up/',
     '/mario/',

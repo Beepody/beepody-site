@@ -45,7 +45,7 @@ export const BeepPlaque: FunctionalComponent<BeepPlaqueProps> = (
               play
             </button>
             <Link
-              href={`/beep/#${JSON.stringify({ 0: beep.sequence.toHash() })}`}
+              href={`/editor/#${JSON.stringify({ 0: beep.sequence.toHash() })}`}
               class="btn btn-secondary">
               edit
             </Link>
