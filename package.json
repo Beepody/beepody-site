@@ -8,7 +8,7 @@
 		"start": "wmr",
 		"build": "wmr build --prerender",
 		"postbuild": "./make-sitemap.mjs",
-		"lint": "eslint 'public/**/*.{js,jsx,ts,tsx,mjs,json}'",
+		"lint": "eslint 'public/**/*.{js,jsx,ts,tsx,mjs}'",
 		"test": "jest",
 		"clean": "rm -rf build coverage",
 		"dev": "yarn test --watch",
