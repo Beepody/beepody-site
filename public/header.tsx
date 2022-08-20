@@ -8,9 +8,12 @@ export default function Header() {
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
           <a class="navbar-brand" href="/">
-            Beepody
+            Psilly.com{' '}
+            <span role="img" aria-label="psychedelic mushroom">
+              🍄
+            </span>
           </a>
-          <span class="navbar-text text-white">Just beep it.</span>
+          <span class="navbar-text text-white">Relax, get psilly...</span>
           <button
             class="navbar-toggler"
             type="button"
@@ -32,9 +35,9 @@ export default function Header() {
                 data-bs-target="#nav-menu">
                 <a
                   class="nav-link text-white"
-                  href="/beeps/"
+                  href="https://puff.psilly.com/login"
                   onClick={handleNavCollapse}>
-                  Beeps
+                  Login
                 </a>
               </li>
               <li
@@ -43,9 +46,9 @@ export default function Header() {
                 data-bs-target="#nav-menu">
                 <a
                   class="nav-link text-white"
-                  href="/random/"
+                  href="/art/"
                   onClick={handleNavCollapse}>
-                  Random
+                  Art
                 </a>
               </li>
               <li
@@ -54,9 +57,86 @@ export default function Header() {
                 data-bs-target="#nav-menu">
                 <a
                   class="nav-link text-white"
-                  href="/editor/"
+                  href="/listen/"
                   onClick={handleNavCollapse}>
-                  Editor
+                  Listen
+                </a>
+              </li>
+              <li
+                class="nav-item"
+                data-bs-toggle="collapse"
+                data-bs-target="#nav-menu">
+                <a
+                  class="nav-link text-white"
+                  href="/watch/"
+                  onClick={handleNavCollapse}>
+                  Watch
+                </a>
+              </li>
+              <li
+                class="nav-item"
+                data-bs-toggle="collapse"
+                data-bs-target="#nav-menu">
+                <a
+                  class="nav-link text-white"
+                  href="/read/"
+                  onClick={handleNavCollapse}>
+                  Read
+                </a>
+              </li>
+              <li
+                class="nav-item"
+                data-bs-toggle="collapse"
+                data-bs-target="#nav-menu">
+                <a
+                  class="nav-link text-white"
+                  href="/play/"
+                  onClick={handleNavCollapse}>
+                  Play
+                </a>
+              </li>
+              <li
+                class="nav-item"
+                data-bs-toggle="collapse"
+                data-bs-target="#nav-menu">
+                <a
+                  class="nav-link text-white"
+                  href="/talk/"
+                  onClick={handleNavCollapse}>
+                  Talk
+                </a>
+              </li>
+              <li
+                class="nav-item"
+                data-bs-toggle="collapse"
+                data-bs-target="#nav-menu">
+                <a
+                  class="nav-link text-white"
+                  href="/chat/"
+                  onClick={handleNavCollapse}>
+                  Chat
+                </a>
+              </li>
+              <li
+                class="nav-item"
+                data-bs-toggle="collapse"
+                data-bs-target="#nav-menu">
+                <a
+                  class="nav-link text-white"
+                  href="/jam/"
+                  onClick={handleNavCollapse}>
+                  Jam
+                </a>
+              </li>
+              <li
+                class="nav-item"
+                data-bs-toggle="collapse"
+                data-bs-target="#nav-menu">
+                <a
+                  class="nav-link text-white"
+                  href="/faq/"
+                  onClick={handleNavCollapse}>
+                  FAQ
                 </a>
               </li>
               <li
@@ -68,6 +148,17 @@ export default function Header() {
                   href="/about/"
                   onClick={handleNavCollapse}>
                   About
+                </a>
+              </li>
+              <li
+                class="nav-item"
+                data-bs-toggle="collapse"
+                data-bs-target="#nav-menu">
+                <a
+                  class="nav-link text-white"
+                  href="/contact/"
+                  onClick={handleNavCollapse}>
+                  Contact
                 </a>
               </li>
             </ul>
