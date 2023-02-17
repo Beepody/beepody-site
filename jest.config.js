@@ -13,7 +13,7 @@ const options = {
       branches: 100,
       functions: 42,
       lines: 69,
-      statements: 69
+      statements: 69,
     }
   }
 }

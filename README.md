@@ -1,6 +1,6 @@
-# Psilly is as Psilly Docs
+# Beepody.com
 
-https://psilly.com/
+https://beepody.com/
 
 ## CLI Commands
 *   `yarn install`: Installs dependencies

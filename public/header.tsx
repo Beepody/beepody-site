@@ -8,12 +8,9 @@ export default function Header() {
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
           <a class="navbar-brand" href="/">
-            Psilly.com{' '}
-            <span role="img" aria-label="psychedelic mushroom">
-              🍄
-            </span>
+            Beepody.com
           </a>
-          <span class="navbar-text text-white">Relax, get psilly...</span>
+          <span class="navbar-text text-white">just beep it</span>
           <button
             class="navbar-toggler"
             type="button"
@@ -35,130 +32,9 @@ export default function Header() {
                 data-bs-target="#nav-menu">
                 <a
                   class="nav-link text-white"
-                  href="https://puff.psilly.com/login"
-                  onClick={handleNavCollapse}>
-                  Login
-                </a>
-              </li>
-              <li
-                class="nav-item"
-                data-bs-toggle="collapse"
-                data-bs-target="#nav-menu">
-                <a
-                  class="nav-link text-white"
-                  href="/art/"
-                  onClick={handleNavCollapse}>
-                  Art
-                </a>
-              </li>
-              <li
-                class="nav-item"
-                data-bs-toggle="collapse"
-                data-bs-target="#nav-menu">
-                <a
-                  class="nav-link text-white"
-                  href="/listen/"
-                  onClick={handleNavCollapse}>
-                  Listen
-                </a>
-              </li>
-              <li
-                class="nav-item"
-                data-bs-toggle="collapse"
-                data-bs-target="#nav-menu">
-                <a
-                  class="nav-link text-white"
-                  href="/watch/"
-                  onClick={handleNavCollapse}>
-                  Watch
-                </a>
-              </li>
-              <li
-                class="nav-item"
-                data-bs-toggle="collapse"
-                data-bs-target="#nav-menu">
-                <a
-                  class="nav-link text-white"
-                  href="/read/"
-                  onClick={handleNavCollapse}>
-                  Read
-                </a>
-              </li>
-              <li
-                class="nav-item"
-                data-bs-toggle="collapse"
-                data-bs-target="#nav-menu">
-                <a
-                  class="nav-link text-white"
-                  href="/play/"
-                  onClick={handleNavCollapse}>
-                  Play
-                </a>
-              </li>
-              <li
-                class="nav-item"
-                data-bs-toggle="collapse"
-                data-bs-target="#nav-menu">
-                <a
-                  class="nav-link text-white"
-                  href="/talk/"
-                  onClick={handleNavCollapse}>
-                  Talk
-                </a>
-              </li>
-              <li
-                class="nav-item"
-                data-bs-toggle="collapse"
-                data-bs-target="#nav-menu">
-                <a
-                  class="nav-link text-white"
-                  href="/chat/"
-                  onClick={handleNavCollapse}>
-                  Chat
-                </a>
-              </li>
-              <li
-                class="nav-item"
-                data-bs-toggle="collapse"
-                data-bs-target="#nav-menu">
-                <a
-                  class="nav-link text-white"
-                  href="/jam/"
-                  onClick={handleNavCollapse}>
-                  Jam
-                </a>
-              </li>
-              <li
-                class="nav-item"
-                data-bs-toggle="collapse"
-                data-bs-target="#nav-menu">
-                <a
-                  class="nav-link text-white"
-                  href="/faq/"
-                  onClick={handleNavCollapse}>
-                  FAQ
-                </a>
-              </li>
-              <li
-                class="nav-item"
-                data-bs-toggle="collapse"
-                data-bs-target="#nav-menu">
-                <a
-                  class="nav-link text-white"
                   href="/about/"
                   onClick={handleNavCollapse}>
                   About
-                </a>
-              </li>
-              <li
-                class="nav-item"
-                data-bs-toggle="collapse"
-                data-bs-target="#nav-menu">
-                <a
-                  class="nav-link text-white"
-                  href="/contact/"
-                  onClick={handleNavCollapse}>
-                  Contact
                 </a>
               </li>
             </ul>
