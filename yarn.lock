@@ -1660,6 +1660,7 @@ __metadata:
     "@types/react-helmet": ^6.1.6
     "@typescript-eslint/eslint-plugin": ^5.52.0
     "@typescript-eslint/parser": ^5.52.0
+    beepody: 0.3.33333333
     entities: ^4.4.0
     enzyme: ^3.11.0
     eslint: ^8.34.0
@@ -1674,6 +1675,7 @@ __metadata:
     prettier: ^2.8.4
     react: ^18.2.0
     react-helmet: ^6.1.0
+    rollup: ^3.16.0
     ts-jest: ^29.0.5
     ts-jest-resolver: ^2.0.0
     typescript: ^4.9.5
@@ -1681,6 +1683,15 @@ __metadata:
     wmr: ^3.8.0
   languageName: unknown
   linkType: soft
+
+"beepody@npm:0.3.33333333":
+  version: 0.3.33333333
+  resolution: "beepody@npm:0.3.33333333"
+  bin:
+    beepody: dist/cli.js
+  checksum: 270beaf09382e5269fa63296d683ffc243ce0299e90f7a4e2415e75ed284756a22d432225557eeedba699a55b42902fac359efe7c4f78baad47da605cd3a5655
+  languageName: node
+  linkType: hard
 
 "boolbase@npm:^1.0.0":
   version: 1.0.0
@@ -2877,7 +2888,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fsevents@npm:^2.1.3, fsevents@npm:^2.3.2":
+"fsevents@npm:^2.1.3, fsevents@npm:^2.3.2, fsevents@npm:~2.3.2":
   version: 2.3.2
   resolution: "fsevents@npm:2.3.2"
   dependencies:
@@ -2887,7 +2898,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fsevents@patch:fsevents@^2.1.3#~builtin<compat/fsevents>, fsevents@patch:fsevents@^2.3.2#~builtin<compat/fsevents>":
+"fsevents@patch:fsevents@^2.1.3#~builtin<compat/fsevents>, fsevents@patch:fsevents@^2.3.2#~builtin<compat/fsevents>, fsevents@patch:fsevents@~2.3.2#~builtin<compat/fsevents>":
   version: 2.3.2
   resolution: "fsevents@patch:fsevents@npm%3A2.3.2#~builtin<compat/fsevents>::version=2.3.2&hash=18f3a7"
   dependencies:
@@ -5333,6 +5344,20 @@ __metadata:
   bin:
     rimraf: bin.js
   checksum: 87f4164e396f0171b0a3386cc1877a817f572148ee13a7e113b238e48e8a9f2f31d009a92ec38a591ff1567d9662c6b67fd8818a2dbbaed74bc26a87a2a4a9a0
+  languageName: node
+  linkType: hard
+
+"rollup@npm:^3.16.0":
+  version: 3.16.0
+  resolution: "rollup@npm:3.16.0"
+  dependencies:
+    fsevents: ~2.3.2
+  dependenciesMeta:
+    fsevents:
+      optional: true
+  bin:
+    rollup: dist/bin/rollup
+  checksum: 239178a83317fc4d0f8adb9f8db7be7d560e4f84653ec63baadba9cd66a8d6cbb0d9b2b6b3160fd5413457f645874571b6a9ec5fe573e02facb4ff7776c828b9
   languageName: node
   linkType: hard
 

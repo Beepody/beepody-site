@@ -11,9 +11,9 @@ const options = {
   coverageThreshold: {
     global: {
       branches: 100,
-      functions: 42,
-      lines: 69,
-      statements: 69,
+      functions: 100,
+      lines: 100,
+      statements: 100
     }
   }
 }

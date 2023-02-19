@@ -12,6 +12,17 @@ async function generate() {
   const urls = [
     '/',
     '/about/',
+    '/beeps/',
+    '/editor/',
+    '/random/',
+    '/constant/',
+    '/coin/',
+    '/power-up/',
+    '/mario/',
+    '/encounters/',
+    '/feel-good/',
+    '/death-march/',
+    '/chain/'
   ]
 
   for (const url of urls) {

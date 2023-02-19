@@ -12,6 +12,10 @@ import Footer from './footer'
 import NotFound from './pages/_404'
 import Home from './pages/home'
 import About from './pages/about'
+import Beeps from './pages/beeps'
+import Editor from './pages/editor'
+import Random from './pages/random'
+import Beep from './pages/beep'
 
 export function App() {
   return (
@@ -19,13 +23,13 @@ export function App() {
       <Helmet
         htmlAttributes={{ lang: 'en-CA' }}
         title="☯"
-        titleTemplate="%s | Beepody"
+        titleTemplate="%s ♩ Beepody"
         titleAttributes={{ itemProp: 'name', lang: 'en-CA' }}
         meta={[
           {
             name: 'description',
             content:
-              'A community dedicated to beeps and beep accessories.',
+              'An online community dedicated to beeps and beep accessories.',
           },
         ]}
         link={[{ rel: 'canonical', href: 'https://beepody.com/' }]}>
@@ -37,7 +41,7 @@ export function App() {
             "legalName" : "Beepody Corporation",
             "url": "https://beepody.com",
             "logo": "https://beepody.com/assets/Beepody.png",
-            "foundingDate": "2019",
+            "foundingDate": "2021",
             "founders": [
               {
               "@type": "Person",
@@ -55,6 +59,10 @@ export function App() {
             <Router>
               <Route path="/" component={Home} />
               <Route path="/about/" component={About} />
+              <Route path="/beeps/" component={Beeps} />
+              <Route path="/editor/" component={Editor} />
+              <Route path="/random/" component={Random} />
+              <Route path="/:slug/" component={Beep} />
               <Route path="/404/" component={NotFound} />
               <Route default component={NotFound} />
             </Router>

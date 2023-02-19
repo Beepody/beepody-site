@@ -1,4 +1,4 @@
-# Beepody.com
+# Beepody Website
 
 https://beepody.com/
 
