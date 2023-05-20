@@ -71,7 +71,8 @@ const library: BeepLibrary = {
     description: "It's me, Mario!",
     sequence: new BeepSequence([
       // 410 668 1 668 1 0 1 668 1 0 1 522 1 668 1 0 1 784 2 0 2 392 2
-      new Beep(668, 100, 2),
+      new Beep(668, 100),
+      new Beep(668, 100),
       new Beep(0, 100),
       new Beep(668, 100),
       new Beep(0, 100),
